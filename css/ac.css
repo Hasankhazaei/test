@@ -1,0 +1,1457 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: IranSans;
+    src: url("../fonts/eot/IRANSans(FaNum)_Medium.eot");
+    src: url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf");
+    src: url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff");
+    src: url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2");
+}
+
+@media (min-width: 1200px){
+    body{
+        min-height: 2000px;
+    }
+    main{
+        width: 100%;
+        direction: rtl;
+    }
+    /*-----------menu-----------*/
+    .menu{
+        width: 100%;
+        height: 70px;
+    }
+    .menu nav{
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+    }
+    .menu nav ul {
+        width: inherit;
+        height: inherit;
+        background-color: #03316f;
+        list-style: none;
+    }
+    .menu nav ul li{
+        display: inline-block;
+        width: 300px;
+        height: inherit;
+
+    }
+    .menu nav ul li a{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        width: inherit;
+        height: inherit;
+        font-family: IranSans;
+        text-shadow: 2px 4px 6px black;
+        color: #a7bee7;
+        transition: all 0.5s ease ;
+    }
+    .menu nav ul li a:hover{
+        color: #808080;
+        border-top: 5px solid #808080 ;
+        box-sizing: border-box;
+    }
+    /*-----------parallax-----------*/
+    .parallax{
+        width: 100%;
+        height: 600px;
+        background:url("../images/36TmdEz.jpg") center center no-repeat fixed;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .parallax .slogan{
+        width: 800px;
+        height: 400px;
+        background-color: rgba(128, 128, 128, 0.39);
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px lightcyan,-5px -5px 5px lightcyan;
+        border-radius: 12px;
+    }
+    .parallax .slogan h1{
+        text-align: center;
+        font-family:IranSans ;
+        margin-bottom: 20px;
+        color: #ffe0b2;
+        text-shadow: 2px 4px 6px black;
+
+    }
+    .parallax .slogan p{
+        text-align: justify;
+        line-height: 40px;
+        font-family:IranSans ;
+        color: #ffe0b2;
+    }
+    /*-----------news-----------*/
+    .news{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #78909C;
+        text-align: center;
+    }
+    .news .article{
+        display: inline-block;
+        width: 30%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+    }
+    .news .article h1{
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 10px;
+        color: darkmagenta;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+    .news .article p{
+        text-align: justify;
+        font-family: IranSans;
+        line-height: 20px;
+    }
+    .news .article a{
+        display: inline-block;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        font-family:IranSans ;
+        background-color: #62c49a;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        color: crimson;
+        transition: all 0.5s ease ;
+
+    }
+    .news .article a:hover{
+        color: rgba(237, 20, 61, 0.68);
+    }
+    /*-----------contact-----------*/
+    .contact{
+        width: 100%;
+        padding: 50px;
+        background-color: #a6a674;
+        box-sizing: border-box;
+    }
+    .contact .form{
+        width: 800px;
+        padding: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact .form form{
+        width: inherit;
+        text-align: center;
+
+    }
+    .contact  h1{
+        text-align: center;
+        font-family:IranSans ;
+        font-size: 50px;
+        color: #3E2723;
+        margin-right: 70px;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.63);
+    }
+    .contact .form form input[type=text]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=email]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form textarea{
+        width: 500px;
+        height: 300px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=submit]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #35351a;
+        outline: none;
+        background-color: #3b3b1f;
+        font-family: IranSans;
+        color: #FFA54E;
+
+    }
+    /*-----------gallery-----------*/
+    .gallery{
+        width: 100%;
+        height: 900px;
+        background-color: darkslategrey;
+    }
+    .gallery h1{
+        text-align: center;
+        font-family: IranSans;
+        font-size: 29px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: #7aa1af;
+        text-shadow: 2px 4px 6px black;
+    }
+    .gallery .image{
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+        padding:30px 145px 30px 10px ;
+        box-sizing: border-box;
+    }
+    .gallery .image img{
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+    .gallery .image img:hover{
+        width: 310px;
+        height: 310px;
+    }
+    /*-----------footer-----------*/
+    .footer{
+        width: 100%;
+        height: 140px;
+        background-color: #363636;
+        text-align: center;
+    }
+    .footer .foote{
+        width: inherit;
+        font-size: 15px;
+        text-align: center;
+        color: peru;
+
+    }
+    .footer .social{
+        display: inline-block;
+        width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .fa-telegram{
+        color: #275982;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-instagram{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-facebook{
+        color: #3d4a92;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-google-plus{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-twitter{
+        color: #1f6287;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+    body{
+        min-height: 2000px;
+    }
+    main{
+        width: 100%;
+        direction: rtl;
+    }
+
+    /*-----------menu-----------*/
+    .menu{
+        width: 100%;
+        height: 70px;
+    }
+    .menu nav{
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+    }
+    .menu nav ul {
+        width: inherit;
+        height: inherit;
+        background-color: #03316f;
+        list-style: none;
+        float: right;
+    }
+    .menu nav ul li{
+        display: inline-block;
+        width: 200px;
+        height: inherit;
+
+    }
+    .menu nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        width: inherit;
+        height: inherit;
+        font-family: IranSans;
+        text-shadow: 2px 4px 6px black;
+        color: #a7bee7;
+        transition: all 0.5s ease ;
+    }
+    .menu nav ul li a:hover{
+        color: #808080;
+        border-top: 5px solid #808080 ;
+        box-sizing: border-box;
+    }
+    /*-----------parallax-----------*/
+    .parallax{
+        width: 100%;
+        height: 600px;
+        background:url("../images/36TmdEz.jpg") center center no-repeat fixed;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .parallax .slogan{
+        width: 800px;
+        height: 400px;
+        background-color: rgba(128, 128, 128, 0.39);
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px lightcyan,-5px -5px 5px lightcyan;
+        border-radius: 12px;
+    }
+    .parallax .slogan h1{
+        text-align: center;
+        font-family:IranSans ;
+        margin-bottom: 20px;
+        color: #ffe0b2;
+        text-shadow: 2px 4px 6px black;
+
+    }
+    .parallax .slogan p{
+        text-align: justify;
+        line-height: 40px;
+        font-family:IranSans ;
+        color: #ffe0b2;
+    }
+    /*-----------news-----------*/
+    .news{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #78909C;
+        text-align: center;
+    }
+    .news .article{
+        display: inline-block;
+        width: 30%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+    }
+    .news .article h1{
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 10px;
+        color: darkmagenta;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+    .news .article p{
+        text-align: justify;
+        font-family: IranSans;
+        line-height: 20px;
+    }
+    .news .article a{
+        display: inline-block;
+        width: 250px;
+        height: 30px;
+        text-align: center;
+        font-family:IranSans ;
+        background-color: #62c49a;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        color: crimson;
+        transition: all 0.5s ease ;
+    }
+    .news .article a:hover{
+        color: rgba(237, 20, 61, 0.68);
+    }
+    /*-----------contact-----------*/
+    .contact{
+        width: 100%;
+        padding: 50px;
+        background-color: #a6a674;
+        box-sizing: border-box;
+    }
+    .contact .form{
+        width: 800px;
+        padding: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact .form form{
+        width: inherit;
+        text-align: center;
+
+    }
+    .contact  h1{
+        text-align: center;
+        font-family:IranSans ;
+        font-size: 50px;
+        color: #3E2723;
+        margin-right: 70px;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.63);
+    }
+    .contact .form form input[type=text]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=email]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form textarea{
+        width: 500px;
+        height: 300px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=submit]{
+        width: 500px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #35351a;
+        outline: none;
+        background-color: #3b3b1f;
+        font-family: IranSans;
+        color: #FFA54E;
+
+    }
+    /*-----------gallery-----------*/
+    .gallery{
+        width: 100%;
+        height: 800px;
+        background-color: darkslategrey;
+    }
+    .gallery h1{
+        text-align: center;
+        font-family: IranSans;
+        font-size: 29px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: #7aa1af;
+        text-shadow: 2px 4px 6px black;
+        box-sizing: border-box;
+    }
+    .gallery .image{
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        padding:30px 145px 90px 10px ;
+        box-sizing: border-box;
+    }
+    .gallery .image img{
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+    .gallery .image img:hover{
+        width: 260px;
+        height: 260px;
+    }
+    /*-----------footer-----------*/
+    .footer{
+        width: 100%;
+        height: 140px;
+        background-color: #363636;
+        text-align: center;
+        display: inline-block;
+    }
+    .footer .foote{
+        width: inherit;
+        font-size: 15px;
+        text-align: center;
+        color: peru;
+
+    }
+    .footer .social{
+        display: inline-block;
+        width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .fa-telegram{
+        color: #275982;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-instagram{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-facebook{
+        color: #3d4a92;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-google-plus{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    .fa-twitter{
+        color: #1f6287;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    body{
+        min-height: 2000px;
+    }
+    main{
+        width: 100%;
+        direction: rtl;
+    }
+    /*-----------menu-----------*/
+    .menu{
+        width: 100%;
+        height: 70px;
+    }
+    .menu nav{
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+    }
+    .menu nav ul {
+        width: inherit;
+        height: inherit;
+        background-color: #03316f;
+        list-style: none;
+        float: right;
+    }
+    .menu nav ul li{
+        display: inline-block;
+        width: 150px;
+        height: inherit;
+
+    }
+    .menu nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        width: inherit;
+        height: inherit;
+        font-family: IranSans;
+        text-shadow: 2px 4px 6px black;
+        color: #a7bee7;
+        transition: all 0.5s ease ;
+    }
+    .menu nav ul li a:hover{
+        color: #808080;
+        border-top: 5px solid #808080 ;
+        box-sizing: border-box;
+    }
+    /*-----------parallax-----------*/
+    .parallax{
+        width: 100%;
+        height: 600px;
+        background:url("../images/36TmdEz.jpg") center center no-repeat fixed;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .parallax .slogan{
+        width: 600px;
+        height: 400px;
+        background-color: rgba(128, 128, 128, 0.39);
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px lightcyan,-5px -5px 5px lightcyan;
+        border-radius: 12px;
+
+    }
+    .parallax .slogan h1{
+        text-align: center;
+        font-family:IranSans ;
+        margin-bottom: 20px;
+        color: #ffe0b2;
+        text-shadow: 2px 4px 6px black;
+
+    }
+    .parallax .slogan p{
+        text-align: justify;
+        line-height: 35px;
+        font-family:IranSans ;
+        color: #ffe0b2;
+    }
+    /*-----------news-----------*/
+    .news{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #78909C;
+        text-align: center;
+    }
+    .news .article{
+        display: inline-block;
+        width: 40%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+
+    }
+    .news .article h1{
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 10px;
+        color: darkmagenta;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+    .news .article p{
+        text-align: justify;
+        font-family: IranSans;
+        line-height: 20px;
+    }
+    .news .article a{
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        font-family:IranSans ;
+        background-color: #62c49a;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        color: crimson;
+        transition: all 0.5s ease ;
+        box-sizing: border-box;
+    }
+    .news .article a:hover{
+        color: rgba(237, 20, 61, 0.68);
+    }
+    /*-----------contact-----------*/
+    .contact{
+        width: 100%;
+        padding: 50px;
+        background-color: #a6a674;
+        box-sizing: border-box;
+    }
+    .contact .form{
+        width: 500px;
+        padding: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact .form form{
+        width: inherit;
+        text-align: center;
+
+    }
+    .contact  h1{
+        text-align: center;
+        font-family:IranSans ;
+        font-size: 40px;
+        color: #3E2723;
+        margin-right: 70px;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.63);
+    }
+    .contact .form form input[type=text]{
+        width: 400px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=email]{
+        width: 400px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form textarea{
+        width: 400px;
+        height: 300px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=submit]{
+        width: 400px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #35351a;
+        outline: none;
+        background-color: #3b3b1f;
+        font-family: IranSans;
+        color: #FFA54E;
+
+    }
+    /*-----------gallery-----------*/
+    .gallery{
+        width: 100%;
+        height: 800px;
+        background-color: darkslategrey;
+    }
+    .gallery h1{
+        text-align: center;
+        font-family: IranSans;
+        font-size: 29px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: #7aa1af;
+        text-shadow: 2px 4px 6px black;
+        box-sizing: border-box;
+    }
+    .gallery .image{
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        padding:30px 10px 90px 10px ;
+        box-sizing: border-box;
+        left: 50px;
+    }
+    .gallery .image img{
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+    .gallery .image img:hover{
+        width: 260px;
+        height: 260px;
+    }
+    /*-----------footer-----------*/
+    .footer{
+        width: 100%;
+        height: 140px;
+        background-color: #363636;
+        text-align: center;
+        display: inline-block;
+    }
+    .footer .foote{
+        width: inherit;
+        font-size: 15px;
+        text-align: center;
+        color: peru;
+
+    }
+    .footer .social{
+        display: inline-block;
+        width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .fa-telegram{
+        color: #275982;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .fa-instagram{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .fa-facebook{
+        color: #3d4a92;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .fa-google-plus{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .fa-twitter{
+        color: #1f6287;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 560px) and (max-width: 768px) {
+    body {
+        min-height: 2000px;
+    }
+
+    main {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /*-----------menu-----------*/
+    .menu {
+        width: 100%;
+        height: 70px;
+    }
+
+    .menu nav {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+    }
+
+    .menu nav ul {
+        width: inherit;
+        height: inherit;
+        background-color: #03316f;
+        list-style: none;
+        float: right;
+    }
+
+    .menu nav ul li {
+        display: inline-block;
+        width: 100px;
+        height: inherit;
+
+    }
+
+    .menu nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        width: inherit;
+        height: inherit;
+        font-family: IranSans;
+        text-shadow: 2px 4px 6px black;
+        color: #a7bee7;
+        transition: all 0.5s ease;
+    }
+
+    .menu nav ul li a:hover {
+        color: #808080;
+        border-top: 5px solid #808080;
+        box-sizing: border-box;
+    }
+
+    /*-----------parallax-----------*/
+    .parallax {
+        width: 100%;
+        height: 600px;
+        background: url("../images/36TmdEz.jpg") center center no-repeat fixed;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .parallax .slogan {
+        width: 500px;
+        height: 400px;
+        background-color: rgba(128, 128, 128, 0.39);
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px lightcyan, -5px -5px 5px lightcyan;
+        border-radius: 12px;
+
+    }
+
+    .parallax .slogan h1 {
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 20px;
+        color: #ffe0b2;
+        text-shadow: 2px 4px 6px black;
+        font-size: larger;
+
+    }
+
+    .parallax .slogan p {
+        text-align: justify;
+        line-height: 24px;
+        font-family: IranSans;
+        color: #ffe0b2;
+        font-size: 18px;
+    }
+
+    /*-----------news-----------*/
+    .news {
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #78909C;
+        text-align: center;
+    }
+
+    .news .article {
+        display: inline-block;
+        width: 40%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+
+    }
+
+    .news .article h1 {
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 10px;
+        color: darkmagenta;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+
+    .news .article p {
+        text-align: justify;
+        font-family: IranSans;
+        line-height: 20px;
+    }
+
+    .news .article a {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        font-family: IranSans;
+        background-color: #62c49a;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        color: crimson;
+        transition: all 0.5s ease;
+        box-sizing: border-box;
+    }
+
+    .news .article a:hover {
+        color: rgba(237, 20, 61, 0.68);
+    }
+
+    /*-----------contact-----------*/
+    .contact {
+        width: 100%;
+        padding: 50px;
+        background-color: #a6a674;
+        box-sizing: border-box;
+    }
+
+    .contact .form {
+        width: 500px;
+        padding: 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .contact .form form {
+        width: inherit;
+        margin-right: 50px;
+
+    }
+
+    .contact h1 {
+        text-align: center;
+        font-family: IranSans;
+        font-size: 30px;
+        color: #3E2723;
+        right: 200px;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.63);
+    }
+
+    .contact .form form input[type=text] {
+        width: 350px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact .form form input[type=email] {
+        width: 350px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact .form form textarea {
+        width: 350px;
+        height: 300px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact .form form input[type=submit] {
+        width: 350px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #35351a;
+        outline: none;
+        background-color: #3b3b1f;
+        font-family: IranSans;
+        color: #FFA54E;
+
+    }
+
+    /*-----------gallery-----------*/
+    .gallery {
+        width: 100%;
+        background-color: darkslategrey;
+    }
+
+    .gallery h1 {
+        text-align: center;
+        font-family: IranSans;
+        font-size: 29px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: #7aa1af;
+        text-shadow: 2px 4px 6px black;
+        box-sizing: border-box;
+    }
+
+    .gallery .image {
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        padding: 30px 80px 90px 20px;
+        box-sizing: border-box;
+        left: 50px;
+    }
+
+    .gallery .image img {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+
+    .gallery .image img:hover {
+        width: 260px;
+        height: 260px;
+    }
+
+    /*-----------footer-----------*/
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: #363636;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .footer .foote {
+        width: inherit;
+        font-size: 12px;
+        text-align: center;
+        color: peru;
+
+    }
+
+    .footer .social {
+        display: inline-block;
+        width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+
+    .fa-telegram {
+        color: #275982;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .fa-instagram {
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .fa-facebook {
+        color: #3d4a92;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .fa-google-plus {
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .fa-twitter {
+        color: #1f6287;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 560px) {
+    body{
+        min-height: 2000px;
+    }
+    main{
+        width: 100%;
+        direction: rtl;
+    }
+    /*-----------menu-----------*/
+    .menu{
+        width: 100%;
+        height: 70px;
+    }
+    .menu nav{
+        width: inherit;
+        height: inherit;
+        text-align: center;
+
+    }
+    .menu nav ul {
+        width: inherit;
+        height: inherit;
+        background-color: #03316f;
+        list-style: none;
+        float: right;
+    }
+    .menu nav ul li{
+        display: inline-block;
+        width: 100px;
+        height: inherit;
+
+
+    }
+    .menu nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        width: inherit;
+        height: inherit;
+        font-family: IranSans;
+        text-shadow: 2px 4px 6px black;
+        color: #a7bee7;
+        transition: all 0.5s ease ;
+    }
+    .menu nav ul li a:hover{
+        color: #808080;
+        border-top: 5px solid #808080 ;
+        box-sizing: border-box;
+    }
+    /*-----------parallax-----------*/
+    .parallax{
+        width: 100%;
+
+        background:url("../images/36TmdEz.jpg") center center no-repeat fixed;
+        padding: 100px;
+        box-sizing: border-box;
+    }
+    .parallax .slogan{
+        width: 300px;
+        background-color: rgba(128, 128, 128, 0.39);
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px lightcyan,-5px -5px 5px lightcyan;
+        border-radius: 12px;
+
+    }
+    .parallax .slogan h1{
+        text-align: center;
+        font-family:IranSans ;
+        margin-bottom: 20px;
+        color: #ffe0b2;
+        text-shadow: 2px 4px 6px black;
+        font-size: larger;
+
+    }
+    .parallax .slogan p{
+        text-align: justify;
+        line-height: 24px;
+        font-family:IranSans ;
+        color: #ffe0b2;
+        font-size: 15px;
+    }
+    /*-----------news-----------*/
+    .news{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: #78909C;
+        text-align: center;
+    }
+    .news .article{
+        display: inline-block;
+        width: 300px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+
+
+    }
+    .news .article h1{
+        text-align: center;
+        font-family: IranSans;
+        margin-bottom: 10px;
+        color: darkmagenta;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.71);
+    }
+    .news .article p{
+        text-align: justify;
+        font-family: IranSans;
+        line-height: 20px;
+    }
+    .news .article a{
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        font-family:IranSans ;
+        background-color: #62c49a;
+        border-radius: 10px;
+        text-decoration: none;
+        margin-top: 50px;
+        padding-top: 10px;
+        color: crimson;
+        transition: all 0.5s ease ;
+        box-sizing: border-box;
+    }
+    .news .article a:hover{
+        color: rgba(237, 20, 61, 0.68);
+    }
+    /*-----------contact-----------*/
+    .contact{
+        width: 100%;
+        padding: 50px;
+        background-color: #a6a674;
+        box-sizing: border-box;
+    }
+    .contact .form{
+        width: 400px;
+        padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact .form form{
+        width: inherit;
+        margin-right: 40px;
+
+    }
+    .contact  h1{
+        text-align: center;
+        font-family:IranSans ;
+        font-size: 30px;
+        color: #3E2723;
+        right: 300px;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.63);
+    }
+    .contact .form form input[type=text]{
+        width: 280px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=email]{
+        width: 280px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form textarea{
+        width: 280px;
+        height: 300px;
+        border-radius: 12px;
+        border: 2px solid #6b6b6b;
+        outline: none;
+        background-color: darkgrey;
+        resize: none;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .contact .form form input[type=submit]{
+        width: 280px;
+        height: 30px;
+        border-radius: 12px;
+        border: 2px solid #35351a;
+        outline: none;
+        background-color: #3b3b1f;
+        font-family: IranSans;
+        color: #FFA54E;
+
+    }
+    /*-----------gallery-----------*/
+    .gallery{
+        width: 100%;
+        background-color: darkslategrey;
+    }
+    .gallery h1{
+        text-align: center;
+        font-family: IranSans;
+        font-size: 29px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: #7aa1af;
+        text-shadow: 2px 4px 6px black;
+        box-sizing: border-box;
+    }
+    .gallery .image{
+        display: inline-block;
+        width: 250px;
+        height: 300px;
+        padding:30px 110px 90px 20px ;
+        box-sizing: border-box;
+    }
+    .gallery .image img{
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: all 0.5s ease;
+    }
+    .gallery .image img:hover{
+        width: 260px;
+        height: 260px;
+    }
+    /*-----------footer-----------*/
+    .footer{
+        width: 100%;
+
+        background-color: #363636;
+        text-align: center;
+        display: inline-block;
+    }
+    .footer .foote{
+        width: inherit;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+        color: peru;
+
+    }
+    .footer .social{
+        display: inline-block;
+        width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+    .fa-telegram{
+        color: #275982;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .fa-instagram{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .fa-facebook{
+        color: #3d4a92;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .fa-google-plus{
+        color: rgba(255, 0, 0, 0.61);
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .fa-twitter{
+        color: #1f6287;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+
